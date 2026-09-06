@@ -99,7 +99,7 @@ export default function App() {
       </header>
 
       <main>
-        <div className="section-heading"><div><p className="eyebrow">PANEL DE CONTROL</p><h2>Resumen de casos</h2></div><span className="local-badge">Entorno local</span></div>
+        <div className="section-heading"><div><p className="eyebrow">PANEL DE CONTROL</p><h2>Resumen de casos</h2></div><span className="local-badge">{['localhost', '127.0.0.1'].includes(window.location.hostname) ? 'Entorno local' : 'En línea'}</span></div>
 
         <section className={`upload-zone ${isDragging ? 'dragging' : ''}`} aria-labelledby="upload-title"
           onDragOver={(event) => { event.preventDefault(); setIsDragging(true) }}
