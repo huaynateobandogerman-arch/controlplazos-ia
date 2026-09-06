@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.pnpm-store/
+*.local
+.env
+.env.*
+!.env.example
+.env.local
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
